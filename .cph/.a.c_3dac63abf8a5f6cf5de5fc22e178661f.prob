@@ -1,0 +1,1 @@
+{"name":"Local: a","url":"d:\\Coding\\CODEFORCES\\a.c","tests":[{"id":1731524039643,"input":"2\n2\n114 109\n2\n17 10","output":"YES\nYES"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Coding\\CODEFORCES\\a.c","group":"local","local":true}
