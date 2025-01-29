@@ -1,2 +1,0 @@
-# CODEFORCES
- codeforces codes

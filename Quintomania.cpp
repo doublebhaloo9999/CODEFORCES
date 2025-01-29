@@ -1,20 +1,20 @@
 #include<bits/stdc++.h>
 using namespace std;
-int solve(int *diff);
+
+int solve();
 
 int main() {
-    int t,*diff;
+    int t;
     cin>>t;
     while (t--) {
-        solve(diff);
+        solve();
     }
     return 0;
 }
 
-int solve(int *diff) {
+int solve() {
     int n,ans=0;
     cin>>n;
-    *diff=ans=0;
     int note[n];
         
     for (int i=0 ; i<n ; i++) {
@@ -22,7 +22,7 @@ int solve(int *diff) {
     }
 
     for (int i=1 ; i<n ; i++ ) {
-        if ( ( abs(note[i]-note[i-1])== 5 || abs(note[i]-note[i-1])== 7 ) + 1 ) {
+        if ( abs(note[i]-note[i-1])!= 5 && abs(note[i]-note[i-1])!= 7  ) {
                 cout<<"NO"<<endl;
                 return 0;
         }
