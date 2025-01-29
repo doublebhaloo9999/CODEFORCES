@@ -1,23 +1,17 @@
 #include<bits/stdc++.h>
 
-using namespace std;
-
-void replace(int &a,int& b) {
-        ios_base::sync_with_stdio(0);
-
-        int c=a+b,d=abs(a-b);
-        a=c;
-        b=d;
-}
-
 int main() {
-        ios_base::sync_with_stdio(0);
-        
-        int a,b;
-        cin>>a>>b;
+        int n,d,num;    
+        cin>>n>>d;
 
-        replace(a,b);
-        cout<<a<<endl<<b<<endl;
+        vector<int> a(n) ;
+        vector<int> a2 ;
+
+        for(auto i=0;i<n;i++) {
+                cin>>a[i];
+        }
+
+        
 
 return 0;
 }
