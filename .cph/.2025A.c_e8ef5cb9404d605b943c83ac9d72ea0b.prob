@@ -1,0 +1,1 @@
+{"name":"Local: 2025A","url":"d:\\Coding\\CODEFORCES\\2025A.c","tests":[{"id":1738249247563,"input":"3\nGARAGE\nGARAGEFORSALE\nABCDE\nAABCD\nTRAINING\nDRAINING\n","output":"14\n10\n16\n"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Coding\\CODEFORCES\\2025A.c","group":"local","local":true}
