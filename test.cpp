@@ -1,17 +1,21 @@
 #include<bits/stdc++.h>
-
-int main() {
-        int n,d,num;    
-        cin>>n>>d;
-
-        vector<int> a(n) ;
-        vector<int> a2 ;
-
-        for(auto i=0;i<n;i++) {
-                cin>>a[i];
+using namespace std;
+void solve() {
+        int n,ans=0,num=0,sum=0;
+        cin>>n;
+        while(n--) {
+            cin>>num;
+            if(num%2==0) ans++;
+            else sum++;
         }
+        cout<<ans+sum/2<<endl;
+}
+int main() {
+        int t;    
+        cin>>t;
 
-        
-
+        while(t--) {
+           solve();
+        }
 return 0;
 }
