@@ -1,0 +1,1 @@
+{"name":"Local: 2014B","url":"d:\\Coding\\CODEFORCES\\2014B.c","tests":[{"id":1738248286499,"input":"5\n1 1\n2 1\n2 2\n3 2\n4 4\n","output":"NO\nYES\nNO\nNO\nYES\n"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Coding\\CODEFORCES\\2014B.c","group":"local","local":true}
