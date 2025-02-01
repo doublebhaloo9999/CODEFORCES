@@ -14,9 +14,8 @@ void solve() {
     }
     sort(sum.begin(), sum.end(), compare);
     for(int i=0 ; i<n ; i++) {
-        ans+=sum[i];
+        cout<<sum[i]<<endl;
     }
-    cout<<ans<<endl;
 }
 int main() {
         int t;    
