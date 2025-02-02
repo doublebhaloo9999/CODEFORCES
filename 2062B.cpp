@@ -47,19 +47,22 @@ using namespace std;
 
 void solve() {
     ios_base::sync_with_stdio(0);
+    cin.tie(0);
+
     int n,ans=1,a;
     cin>>n;
 
     for(int i=0 ; i<n ; i++) {
         cin>>a;
 
-        if( a < 2*(n-i) - 1 || a < 2*i-1 ) ans=0;
+        if( a<= 2*max(i,n-i-1) ) ans=0;
 
     }
     (ans) ? cout<<"YES"<<endl :  cout<<"NO"<<endl; 
 }
 int main() {
     ios_base::sync_with_stdio(0);
+    cin.tie(0);
         int t;    
         cin>>t;
 

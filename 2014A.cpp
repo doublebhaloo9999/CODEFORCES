@@ -7,7 +7,7 @@ void solve() {
 
     for(int i=1;i<=n;i++) {
         cin>>a;
-        if(gold<k) gold+=a;
+        if(a>=k) gold+=a;
         if(a==0 && gold>0 ) {
             gold--;
             ans++;
