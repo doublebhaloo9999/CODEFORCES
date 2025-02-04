@@ -1,29 +1,38 @@
 #include<bits/stdc++.h>
 using namespace std;
-bool compare(int a , int b) {
-    return a > b ;
-}
 void solve() {
-    ios_base::sync_with_stdio(0);
-    int n , k , q ;
-    cin>>n>>k;
-    q=k ;
-    vector <int> sum(k,0);
+    ios_base::sync_with_stdio(0);	              
 
-    while(k--) {
-        int brand , cost ;
-        cin>>brand>>cost;
-        sum[brand-1] += cost;
+    int n , k ;
+    cin>>n>>k;
+
+    int ans=0  , alice=0 ;  
+
+    vector<int> num;
+    for(int i=0 ; i<n ; i++) {
+        int x;                                  
+        cin>>x;
+        num.push_back(x);
     }
-    sort( sum.begin(), sum.end() , compare );
-    int ans = 0 ;
-    for(int i=0 ; i < min(n,q) ; i++) {
-        ans += sum[i];
+    // for(int i=0; i<n ; i++) {
+    //     cout<<num[i]<<" ";
+    // }
+    // cout<<endl;
+    if(k==1) {
+        cout<<ans<<endl;
+        return;
+    }
+    
+
+    for(int i=0 ; i<n ; i++) {
+        for(int j=0 ; j<n ; j++) {
+            if(  num[i]-num[j]==k ) ans++;
+        }
     }
     cout<<ans<<endl;
 }
 int main() {
-    ios_base::sync_with_stdio(0);
+        ios_base::sync_with_stdio(0);
         int t;    
         cin>>t;
 
