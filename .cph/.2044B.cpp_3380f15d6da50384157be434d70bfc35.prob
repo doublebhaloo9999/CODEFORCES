@@ -1,0 +1,1 @@
+{"name":"Local: 2044B","url":"d:\\Coding\\CODEFORCES\\2044B.cpp","tests":[{"id":1738748970800,"input":"5\nqwq\nppppp\npppwwwqqq\nwqpqwpqwwqp\npqpqpqpq\n","output":"pwp\nqqqqq\npppwwwqqq\nqpwwpqwpqpw\npqpqpqpq\n"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Coding\\CODEFORCES\\2044B.cpp","group":"local","local":true}

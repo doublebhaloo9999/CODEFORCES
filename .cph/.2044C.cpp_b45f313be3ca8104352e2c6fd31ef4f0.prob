@@ -1,0 +1,1 @@
+{"name":"Local: 2044C","url":"d:\\Coding\\CODEFORCES\\2044C.cpp","tests":[{"id":1738764679416,"input":"5\n10 5 5 10\n3 6 1 1\n15 14 12 4\n1 1 1 1\n420 6 9 69\n","output":"20\n5\n30\n2\n84\n"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Coding\\CODEFORCES\\2044C.cpp","group":"local","local":true}
