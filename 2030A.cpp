@@ -2,19 +2,16 @@
 using namespace std;
 void solve() {
     ios_base::sync_with_stdio(0);	              
-    int n,k;
-    cin>>n>>k;
-    double leaves=0.0;
-    while(k--) {
-        leaves+=pow(n,n);
-        n--;
-        if(n==0) break;
+    int n , Min =1000 , Max=0 ; 
+    cin>>n;
+    int num;
+    for(int i=0 ; i<n ; i++ ) {
+        cin>>num;
+        Min=min(Min,num);
+        Max=max(Max,num);
     }
-    if(leaves==0) {
-        cout<<"YES\n";
-        return;
-    }
-    ((int)leaves%2==0) ? cout<<"YES\n" : cout<<"NO\n";
+    n--;
+    cout<<(Max-Min)*(n)<<endl;
 }
 int main() {
         ios_base::sync_with_stdio(0);

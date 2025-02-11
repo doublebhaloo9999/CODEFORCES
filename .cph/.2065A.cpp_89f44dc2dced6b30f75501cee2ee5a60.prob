@@ -1,0 +1,1 @@
+{"name":"Local: 2065A","url":"d:\\Coding\\CODEFORCES\\2065A.cpp","tests":[{"id":1739187131618,"input":"9\nus\nsus\nfungus\ncactus\nsussus\namogus\nchungus\nntarsus\nskibidus\n","output":"i\nsi\nfungi\ncacti\nsussi\namogi\nchungi\nntarsi\nskibidi\n"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Coding\\CODEFORCES\\2065A.cpp","group":"local","local":true}
