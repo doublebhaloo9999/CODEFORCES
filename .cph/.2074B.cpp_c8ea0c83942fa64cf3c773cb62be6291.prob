@@ -1,0 +1,1 @@
+{"name":"Local: 2074B","url":"d:\\Coding\\CODEFORCES\\2074B.cpp","tests":[{"id":1744174004793,"input":"4\n1\n10\n3\n998 244 353\n5\n1 2 3 4 5\n9\n9 9 8 2 4 4 3 5 3\n","output":"10\n1593\n11\n39\n"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Coding\\CODEFORCES\\2074B.cpp","group":"local","local":true}
