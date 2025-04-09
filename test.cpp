@@ -1,21 +1,25 @@
-#include<bits/stdc++.h>
-using namespace std;
-void solve() {
-        int n,ans=0,num=0,sum=0;
-        cin>>n;
-        while(n--) {
-            cin>>num;
-            if(num%2==0) ans++;
-            else sum++;
-        }
-        cout<<ans+sum/2<<endl;
-}
-int main() {
-        int t;    
-        cin>>t;
+#include <bits/stdc++.h>
 
-        while(t--) {
-           solve();
-        }
-return 0;
+using namespace std;
+
+void solve() {
+  int n;
+  string s;
+  cin >> n >> s;
+  int64_t dash = count(s.begin(), s.end(), '-');
+  int64_t under = n - dash;
+  
+  cout << "Dash = "<< dash << " Underscore = " << under << '\n';
+  
+  int64_t ans = (dash / 2) * (dash - dash / 2) * under;
+  cout << ans << '\n';
+}
+
+int main() {
+  int tt;
+  cin >> tt;
+  while (tt --> 0) {
+    solve();
+  }
+  return 0;
 }
