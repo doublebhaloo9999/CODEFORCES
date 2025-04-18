@@ -7,7 +7,7 @@ int main() {
         while(t--) {
             int n;
             cin>>n;
-            int sum=0,piecePerDay=0;
+            int sum=0,piecePerDay=0;    
             double max=100.0;
 
             while(n--) {
