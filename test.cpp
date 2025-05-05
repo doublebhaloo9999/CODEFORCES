@@ -1,25 +1,33 @@
-#include <bits/stdc++.h>
+#include <iostream>
+#include <vector>
 
-using namespace std;
+std::vector<std::vector<int>> transposeMatrix(const std::vector<std::vector<int>>& matrix) {
+    int rows = matrix.size();
+    int cols = matrix[0].size();
 
-void solve() {
-  int n;
-  string s;
-  cin >> n >> s;
-  int64_t dash = count(s.begin(), s.end(), '-');
-  int64_t under = n - dash;
-  
-  cout << "Dash = "<< dash << " Underscore = " << under << '\n';
-  
-  int64_t ans = (dash / 2) * (dash - dash / 2) * under;
-  cout << ans << '\n';
+    // Create a new matrix with dimensions swapped
+    std::vector<std::vector<int>> transposedMatrix(cols, std::vector<int>(rows));
+
+    // Iterate through the original matrix and swap indices
+    for (int i = 0; i < rows; ++i) {
+        for (int j = 0; j < cols; ++j) {
+            transposedMatrix[j][i] = matrix[i][j];
+        }
+    }
+
+    return transposedMatrix;
 }
 
 int main() {
-  int tt;
-  cin >> tt;
-  while (tt --> 0) {
-    solve();
-  }
-  return 0;
+    std::vector<stdesection> matrix = {{1, 2, 3}, {4, 5, 6}};
+    std::vector<std::vector<int>> transposed = transposeMatrix(matrix);
+
+    // Print the transposed matrix
+    for (const auto& row : transposed) {
+        for (int val : row) {
+            std::cout << val << " ";
+        }
+        std::cout << std::endl;
+    }
+    return 0;
 }

@@ -2,37 +2,34 @@
 using namespace std;
 void solve() {
     ios_base::sync_with_stdio(0);	              
-    int n , k , ans=1 ;
+    int n,k;
     cin>>n>>k;
-    vector<int> a,diff;
-    
-    int num=0;
-    cin>>num;
-    a.push_back(num);
-    
-    for(int i=1;i<n;i++) {
+    vector<int> odd , even ;
+    int num;
+    while(n--) {
         cin>>num;
-        a.push_back(num);
+        (num%2==0) ? even.push_back(num) : odd.push_back(num) ;
     }
-  //  stable_sort(a.begin(),a.end());
-    for(int i=0 ; i<n-1 ; i++) {
-        for(int j=0 ; j<n ; j++) {
-            if(i==j) continue;
-            diff.push_back(abs(a[i]-a[j]));
+    if( k%2 != 0 ) {
+        if( even.size() > 0 ) {
+            sort(even.begin(),even.end(),greater<int>());
+            cout<<"YES\n"<<even[0]<<"\n";
+        }
+        else {
+            cout<<"NO\n";
         }
     }
-    stable_sort(diff.begin(),diff.end());
-    int index;
-    for(int i=0 ; i<diff.size() ; i++) {
-        if(diff[i]%k==0) {
-            ans++;
-            index=i;
-            break;
+    else if( k%2 == 0 ) {
+        if( odd.size() > 0 ) {
+            sort(odd.begin(),odd.end(),greater<int>());
+            cout<<"YES\n"<<odd[0]<<"\n";
         }
-    }             
-    (ans) ? cout<<"YES"<<endl<<index<<endl : cout<<"NO"<<endl;
+        else {
+            cout<<"NO\n";
+        }
+    }
+}              
 
-}
 int main() {
         ios_base::sync_with_stdio(0);
         int t;    

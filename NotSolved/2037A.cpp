@@ -4,13 +4,26 @@ void solve() {
     ios_base::sync_with_stdio(0);	              
     cin.tie(0);
     cout.tie(0);
-    int l,r,d,u ;
-    cin>>l>>r>>d>>u;
+    int n;
+    cin>>n;
 
-    if(l==r && r==d && d==u) 
-        cout<<"Yes\n";
-    else 
-        cout<<"No\n";              
+    // wrong answer for test 2
+
+    int a[20] = {0};
+
+    int ans,i;
+    
+    for(i=0;i<n;i++) {
+        cin>>ans;
+        a[ans-1]++;
+    }
+    
+    ans = 0;
+    for (int i = 0; i < 20; i++) {
+        ans +=a[i]/2;
+    }
+    
+    cout<<ans<<endl;
 }
 int main() {
         ios_base::sync_with_stdio(0);
