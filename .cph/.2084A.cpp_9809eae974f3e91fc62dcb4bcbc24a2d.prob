@@ -1,0 +1,1 @@
+{"name":"Local: 2084A","url":"d:\\Coding\\CODEFORCES\\2084A.cpp","tests":[{"id":1746523899501,"input":"4\n2\n3\n4\n5\n","output":"-1\n3 2 1\n-1\n1 5 2 3 4\n"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Coding\\CODEFORCES\\2084A.cpp","group":"local","local":true}

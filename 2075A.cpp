@@ -9,14 +9,15 @@ void solve() {
         cin >> n >> k;
         long long ans = 0;
         
-        if (n % 2 == 1) {
-            n -= k;
-            ans = 1;
+        if ( n % 2 == 1 ) {
+            n -= k ;
+            ans = 1 ;
         }
         
-        k -= 1;
-        ans += (n + k - 1) / k;
-
+        k -= 1 ; 
+         
+        ans += (n + k - 1) / k ;
+    
         cout << ans << endl;              
 }
 int main() {
