@@ -1,27 +1,28 @@
 #include<bits/stdc++.h>
+#define ll long long
 using namespace std;
 
-typedef long long ll;
-
 void solve() {
-    ios_base::sync_with_stdio(0);	              
     cin.tie(0);
     cout.tie(0);
+    
+    ll n ;
+    cin >> n ;
 
-    int n ;
-    cin >> n ; 
-    ll ans = (n/15) *3 ;
+    int sq = ceil(sqrt(n)) ;
 
-    n %= 15 ;
-
-    for(int i=0 ; i<=n ; i++) {
-        if ( i%3 == i%5 ) ans++ ;
+    if(sq * sq == n) {
+        cout << "0 " << sq << "\n" ;
     }
-
-    cout << ans << "\n" ;
+    else {
+        cout<<"-1\n" ;
+    }
+    
 }
 int main() {
         ios_base::sync_with_stdio(0);
+         cin.tie(0);
+ 
         int t;    
         cin>>t;
 

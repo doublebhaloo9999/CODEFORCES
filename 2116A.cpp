@@ -1,27 +1,24 @@
 #include<bits/stdc++.h>
 using namespace std;
-
-typedef long long ll;
+#define ll long long
 
 void solve() {
-    ios_base::sync_with_stdio(0);	              
     cin.tie(0);
     cout.tie(0);
 
-    int n ;
-    cin >> n ; 
-    ll ans = (n/15) *3 ;
+    ll a,b,c,d;
+    cin >> a >> b >> c >> d ;
 
-    n %= 15 ;
+    a=min(a,c) ;
+    b=min(b,d) ;
 
-    for(int i=0 ; i<=n ; i++) {
-        if ( i%3 == i%5 ) ans++ ;
-    }
-
-    cout << ans << "\n" ;
+    ( a >= b ) ? cout<<"Gellyfish\n" : cout<<"Flower\n"; 
+                  
 }
 int main() {
         ios_base::sync_with_stdio(0);
+         cin.tie(0);
+ 
         int t;    
         cin>>t;
 
